@@ -7,9 +7,13 @@ import java.util.ArrayList;
 public class Bedroom extends Room{
 
     private int roomNumber;
+    private BedroomTypes type;
 
-    public Bedroom(int capacity, ArrayList<Guest> guest, int roomNumber) {
-        super(capacity, guest);
+    public Bedroom(int capacity, int roomNumber, BedroomTypes type) {
+        super(capacity);
         this.roomNumber = roomNumber;
+        this.type = type;
     }
+
+
 }
