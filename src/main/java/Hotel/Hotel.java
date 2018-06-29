@@ -11,4 +11,8 @@ public class Hotel {
     public Hotel(){
         this.rooms = new ArrayList<>();
     }
+
+    public int countBedrooms() {
+       return this.rooms.size();
+    }
 }

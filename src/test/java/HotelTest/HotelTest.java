@@ -1,11 +1,15 @@
 package HotelTest;
 
 import Hotel.Guest;
+import Hotel.Hotel;
 import Hotel.Room.Bedroom;
 import Hotel.Room.BedroomTypes;
 import Hotel.Room.ConferenceRoom;
 import Hotel.Room.DinningRoom;
 import org.junit.Before;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class HotelTest {
 
@@ -27,6 +31,8 @@ public class HotelTest {
     DinningRoom dinningRoom2;
     DinningRoom dinningRoom3;
 
+    Hotel hotel;
+
 
     @Before
     public void before() {
@@ -35,6 +41,7 @@ public class HotelTest {
         guest2 = new Guest("Jesus");
         guest3 = new Guest("Helen");
         guest4 = new Guest("Julia");
+
 
         bedroom1 = new Bedroom(2, 12, BedroomTypes.DOUBLE);
         bedroom2 = new Bedroom(1, 13, BedroomTypes.SINGLE);
@@ -45,6 +52,15 @@ public class HotelTest {
         conferenceRoom2 = new ConferenceRoom(20, "West", 250);
         conferenceRoom3 = new ConferenceRoom(30, "East", 350);
 
-        dinningRoom1 = new Dinning
+        dinningRoom1 = new DinningRoom(30, "Breakfast");
+        dinningRoom2 = new DinningRoom(30, "Lunch");
+        dinningRoom3 = new DinningRoom(30, "Dinner");
+
+        hotel = new Hotel();
+    }
+
+    @Test
+    public void CanCountBedrooms(){
+      assertEquals(4, hotel.countBedrooms());
     }
 }
