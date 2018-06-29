@@ -19,4 +19,12 @@ public class Bedroom extends Room{
     public int getRoomNumber() {
         return roomNumber;
     }
+
+    public BedroomTypes getType() {
+        return type;
+    }
+
+    public int getPrice() {
+        return this.type.getValue();
+    }
 }

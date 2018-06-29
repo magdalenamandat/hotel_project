@@ -2,6 +2,7 @@ package RoomTest;
 
 import Hotel.Guest;
 import Hotel.Room.Bedroom;
+import Hotel.Room.BedroomTypes;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -15,7 +16,7 @@ public class BedroomTest {
 
     @Before
     public void before(){
-        bedroom = new Bedroom(2, 10, "double");
+        bedroom = new Bedroom(2, 10, BedroomTypes.DOUBLE);
         guest = new Guest("Magda");
     }
 
@@ -27,6 +28,16 @@ public class BedroomTest {
     @Test
     public void canGetRoomNumber(){
         assertEquals(10, bedroom.getRoomNumber());
+    }
+
+    @Test
+    public void canGetType(){
+        assertEquals((BedroomTypes.DOUBLE), bedroom.getType());
+    }
+
+    @Test
+    public void canGetPrice(){
+        assertEquals(60, bedroom.getPrice(), 1);
     }
 
 }
