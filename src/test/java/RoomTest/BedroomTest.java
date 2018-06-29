@@ -40,4 +40,17 @@ public class BedroomTest {
         assertEquals(60, bedroom.getPrice(), 1);
     }
 
+    @Test
+    public void canCountGuests(){
+        bedroom.addGuest(guest);
+        assertEquals(1, bedroom.countGuests());
+    }
+
+    @Test
+    public void canRemoveGuest(){
+        bedroom.addGuest(guest);
+        bedroom.removeGuest();
+        assertEquals(0, bedroom.countGuests());
+    }
+
 }

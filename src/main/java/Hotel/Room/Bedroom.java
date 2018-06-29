@@ -27,4 +27,6 @@ public class Bedroom extends Room{
     public int getPrice() {
         return this.type.getValue();
     }
+
+
 }
