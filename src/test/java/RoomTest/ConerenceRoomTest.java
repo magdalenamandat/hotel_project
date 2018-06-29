@@ -28,4 +28,9 @@ public class ConerenceRoomTest {
     public void canGetName(){
         assertEquals("North", conferenceRoom.getName());
     }
+
+    @Test
+    public void canGetDailyRate(){
+        assertEquals(100, conferenceRoom.getDailyRate(), 1);
+    }
 }
