@@ -92,10 +92,16 @@ public class HotelTest {
         assertEquals(0, bedroom2.countGuests());
     }
 
-    @Test
-    public void canDisplayListOfEmptyRooms(){
-    hotel.checkInGuest(guest1, bedroom2);
-    hotel.checkInGuest(guest3, bedroom4);
-    assertEquals();
-    }
+//    @Test
+//    public void canGetGuestsBookInRoom(){
+//        hotel.checkInGuest(guest3, bedroom1);
+//        assertEquals(guest3, hotel.getGuestsBookedIntoRoom(bedroom1));
+//    }
+
+//    @Test
+//    public void canDisplayListOfEmptyRooms(){
+//    hotel.addRoom(bedroom1);
+//    hotel.addRoom(bedroom2);
+//    assertEquals(2, hotel.listOfEmptyRooms());
+//    }
 }

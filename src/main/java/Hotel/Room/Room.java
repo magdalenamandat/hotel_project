@@ -34,4 +34,9 @@ public abstract class Room {
     public int countGuests() {
       return this.guest.size();
     }
+
+    public ArrayList<String> getGuestName() {
+        ArrayList<String> guestName = null;
+        return guestName;
+    }
 }

@@ -38,6 +38,13 @@ public class Hotel {
     }
 
 
+    public ArrayList<Guest> getGuestsBookedIntoRoom(Room room) {
+        return room.getGuest();
+    }
+
+    public ArrayList<String> getNamesOfGuestsBookedIntoRoom(Room room) {
+        return room.getGuestName();
+    }
 
     public ArrayList<Room> listOfEmptyRooms() {
         ArrayList<Room> emptyRooms = new ArrayList<>();

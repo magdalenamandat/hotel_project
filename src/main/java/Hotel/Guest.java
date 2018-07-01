@@ -8,7 +8,7 @@ public class Guest {
         this.name = name;
     }
 
-    public String getName() {
+    public String getGuestName() {
         return name;
     }
 }
