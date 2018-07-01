@@ -13,6 +13,10 @@ public class Hotel {
         this.rooms = new ArrayList<>();
     }
 
+    public ArrayList<Room> getRooms() {
+        return rooms;
+    }
+
     public int countBedrooms() {
        return this.rooms.size();
     }
@@ -30,6 +34,24 @@ public class Hotel {
     }
 
     public void checkOut(Room room) {
-        room.removeAllGuest();
+        room.removeAllGuests();
     }
+
+    public ArrayList<Room> listOfEmptyRooms() {
+        ArrayList<Room> emptyRooms = new ArrayList<>();
+
+        for (int i = 0; i < getRooms().size(); i++){
+            if (getRooms().get(i).countGuests() == 0){
+                emptyRooms.add(getRooms().get(i));
+            }
+        }
+
+//        for (Room room : getRooms()) {
+////            if (room.countGuests() == 0) {
+////                emptyRooms.add(room);
+////            }
+////        }
+           return emptyRooms;
+    }
+
 }

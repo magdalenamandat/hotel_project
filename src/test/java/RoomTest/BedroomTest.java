@@ -49,7 +49,7 @@ public class BedroomTest {
     @Test
     public void canRemoveGuest(){
         bedroom.addGuest(guest);
-        bedroom.removeAllGuest();
+        bedroom.removeAllGuests();
         assertEquals(0, bedroom.countGuests());
     }
 
