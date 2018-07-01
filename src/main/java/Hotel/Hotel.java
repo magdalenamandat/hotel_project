@@ -37,6 +37,8 @@ public class Hotel {
         room.removeAllGuests();
     }
 
+
+
     public ArrayList<Room> listOfEmptyRooms() {
         ArrayList<Room> emptyRooms = new ArrayList<>();
 
@@ -53,5 +55,7 @@ public class Hotel {
 ////        }
            return emptyRooms;
     }
+
+
 
 }

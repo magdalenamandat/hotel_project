@@ -91,4 +91,11 @@ public class HotelTest {
         hotel.checkOut(bedroom2);
         assertEquals(0, bedroom2.countGuests());
     }
+
+    @Test
+    public void canDisplayListOfEmptyRooms(){
+    hotel.checkInGuest(guest1, bedroom2);
+    hotel.checkInGuest(guest3, bedroom4);
+    assertEquals();
+    }
 }
